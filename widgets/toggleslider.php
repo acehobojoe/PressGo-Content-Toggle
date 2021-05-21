@@ -40,8 +40,8 @@ class PressGo extends Widget_Base {
    public function __construct( $data = [], $args = null ) {
  			parent::__construct( $data, $args );
 
- 			wp_register_style('toggle-style', plugins_url() . '/Elementor-Widget-Pack/assets/css/togl-style.css', );
-      wp_register_script( 'toggle-script', plugins_url() . '/Elementor-Widget-Pack/assets/js/toggle.js', );
+ 			wp_register_style('toggle-style', plugins_url() . '/PressGo-Widget-Pack/assets/css/togl-style.css', );
+      wp_register_script( 'toggle-script', plugins_url() . '/PressGo-Widget-Pack/assets/js/toggle.js', );
 
 
   	}

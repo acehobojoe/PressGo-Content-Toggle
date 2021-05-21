@@ -51,18 +51,18 @@ class ToggleHandlerClass {
    */
 
    public function widget_scripts() {
-     wp_register_script( 'plugin-script', plugins_url( '/Elementor-Widget-Pack/assets/js/pluginpack.js', __FILE__ ), [ 'jquery' ], true );
+     wp_register_script( 'plugin-script', plugins_url( '/PressGo-Widget-Pack/assets/js/pluginpack.js', __FILE__ ), [ 'jquery' ], true );
      wp_register_script( 'toggle-script', plugins_url( '/assets/js/toggle.js', __FILE__ ), [ 'jquery' ], true );
 
    }
 
    public function enqueue() {
-     wp_enqueue_script( 'toggle-script', plugin_dir_url( __FILE__ ) . '/Elementor-Widget-Pack/assets/js/toggle.js', array('jquery'), self::VERSION );
-     wp_enqueue_style( 'toggle-style', plugin_dir_url( __FILE__ ) . '/Elementor-Widget-Pack/assets/css/togl-style.css', [], self::VERSION );
+     wp_enqueue_script( 'toggle-script', plugin_dir_url( __FILE__ ) . '/PressGo-Widget-Pack/assets/js/toggle.js', array('jquery'), self::VERSION );
+     wp_enqueue_style( 'toggle-style', plugin_dir_url( __FILE__ ) . '/PressGo-Widget-Pack/assets/css/togl-style.css', [], self::VERSION );
 
    }
    public function enqueue_styles_widget() {
-     wp_register_style( 'toggle-style', plugin_dir_url( __FILE__ ) . '/Elementor-Widget-Pack/assets/css/togl-style.css', [], self::VERSION );
+     wp_register_style( 'toggle-style', plugin_dir_url( __FILE__ ) . '/PressGo-Widget-Pack/assets/css/togl-style.css', [], self::VERSION );
    }
 
 

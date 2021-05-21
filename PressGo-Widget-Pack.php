@@ -8,7 +8,7 @@ Plugin URI: https://pressgohosting.com
 Description: This is a package with a few elements for Elementor
 Version: 0.2
 Author: Joseph Holder
-Author URI: https://pressgohosting.com
+Author URI: https://pressgodigital.com
 License: GPLv2 or later
 Text Domain: press-go-widgets
 */
