@@ -1,0 +1,15 @@
+Elementor Widgets LOG
+
+1. Added a New "Press Go Widgets" Category
+2. Changed the Icon and name of the Widget
+3. You can add to the style tab with the following 
+
+  'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+4. Added a simple Heading 1 for the switch
+5. Added HTML tag change functionality
+6. Added base HTML for 2 headings and a check mark
+7. Working on the CSS....
+
+8. Managed to get the CSS working by enqueueing it in the actual widget php
+9. Centered text below and cleaned up HTML
+10. Working on JS loading in elementor
