@@ -6,7 +6,7 @@
 Plugin Name: Press Go Widget Pack
 Plugin URI: https://pressgohosting.com
 Description: This is a package with a few elements for Elementor
-Version: 0.01
+Version: 0.2
 Author: Joseph Holder
 Author URI: https://pressgohosting.com
 License: GPLv2 or later
@@ -33,6 +33,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 if( ! defined( 'ABSPATH' ) ) {
 	die;
 }
+
+//Update Checker
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/acehobojoe/PressGo-Widget-Pack/',
+	__FILE__,
+	'PressGo-Widget-Pack'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('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');
+
+
 
 /**
  * Main Elementor PressGo Class
