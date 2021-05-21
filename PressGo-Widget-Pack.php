@@ -6,7 +6,7 @@
 Plugin Name: Press Go Widget Pack
 Plugin URI: https://pressgohosting.com
 Description: This is a package with a few elements for Elementor
-Version: 0.1
+Version: 0.2
 Author: Joseph Holder
 Author URI: https://pressgodigital.com
 License: GPLv2 or later
