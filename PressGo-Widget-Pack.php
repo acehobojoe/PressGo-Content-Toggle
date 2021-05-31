@@ -4,10 +4,10 @@
  */
 /*
 Plugin Name: Press Go Widget Pack
-Plugin URI: https://pressgohosting.com
+Plugin URI: https://pressgodigital.com
 Description: This is a package with a few elements for Elementor
 Version: 0.5
-Author: Joseph Holder
+Author: PressGo Digital
 Author URI: https://pressgodigital.com
 License: GPLv2 or later
 Text Domain: press-go-widgets
