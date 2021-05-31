@@ -242,10 +242,6 @@ $this->end_controls_section();
       [
         'label' => __( 'Title Color', 'elementor-PressGo' ),
         'type' => \Elementor\Controls_Manager::COLOR,
-        'scheme' => [
-          'type' => \Elementor\Scheme_Color::get_type(),
-          'value' => \Elementor\Scheme_Color::COLOR_1,
-        ],
         'default' => '#000000',
         'selectors' => [
           '.elementor-togl' => 'color: {{VALUE}}',
@@ -258,11 +254,7 @@ $this->end_controls_section();
 			[
 				'label' => __( 'Inactive Switch Color', 'elementor-PressGo' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => \Elementor\Scheme_Color::get_type(),
-					'value' => \Elementor\Scheme_Color::COLOR_1,
-				],
-        'default' => '#FFFFFF',
+        'default' => '#fff',
 				'selectors' => [
 					'.switch .slider:after' => 'background-color: {{VALUE}}',
 				],
@@ -274,11 +266,7 @@ $this->end_controls_section();
         [
           'label' => __( 'Active Switch Color', 'elementor-PressGo' ),
           'type' => \Elementor\Controls_Manager::COLOR,
-          'scheme' => [
-            'type' => \Elementor\Scheme_Color::get_type(),
-            'value' => \Elementor\Scheme_Color::COLOR_1,
-          ],
-          'default' => '#FFFFFF',
+          'default' => '#fff',
           'selectors' => [
             '.switch input:checked + .slider:after ' => 'background-color: {{VALUE}}',
           ],
@@ -290,10 +278,6 @@ $this->end_controls_section();
           [
             'label' => __( 'Active Background Color', 'elementor-PressGo' ),
             'type' => \Elementor\Controls_Manager::COLOR,
-            'scheme' => [
-              'type' => \Elementor\Scheme_Color::get_type(),
-              'value' => \Elementor\Scheme_Color::COLOR_1,
-            ],
             'default' => '#10ADFC',
             'selectors' => [
               '.switch input:checked + .slider' => 'background-color: {{VALUE}}',
@@ -307,10 +291,6 @@ $this->end_controls_section();
             [
               'label' => __( 'Inactive Background Color', 'elementor-PressGo' ),
               'type' => \Elementor\Controls_Manager::COLOR,
-              'scheme' => [
-                'type' => \Elementor\Scheme_Color::get_type(),
-                'value' => \Elementor\Scheme_Color::COLOR_1,
-              ],
               'default' => '#809098',
               'selectors' => [
                 '.switch .slider' => 'background-color: {{VALUE}}',
@@ -342,6 +322,7 @@ $this->end_controls_section();
           				],
           			]
           		);
+
               $this->add_control(
                     'slider-border-radius',
                     [
@@ -396,6 +377,7 @@ $this->end_controls_section();
   <label class="switch">
     <input type="checkbox" class="tgl" checked><span class="slider round"></span></label></div>
 <div><<?php echo $settings['html_tag'];?> class="elementor-togl"><?php echo $settings['heading2']; ?></<?php echo $settings['html_tag'];?>></div></div>
+
 <div class="contentsec">
 <div align=center class="section-1"><?php echo $settings['content_section'];?></div>
 <div align=center class="section-2 hide-sec"><?php echo $settings['content_section2'];?></div></div></div>

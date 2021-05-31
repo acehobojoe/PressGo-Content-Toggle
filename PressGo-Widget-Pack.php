@@ -5,8 +5,8 @@
 /*
 Plugin Name: Press Go Widget Pack
 Plugin URI: https://pressgodigital.com
-Description: This is a package with a few elements for Elementor
-Version: 0.6
+Description: This is a package with a few widgets for Elementor
+Version: 0.7
 Author: PressGo Digital
 Author URI: https://pressgodigital.com
 License: GPLv2 or later

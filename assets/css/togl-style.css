@@ -61,3 +61,7 @@
 .hide-sec{
   display:none;
 }
+
+.elementor-togl{
+margin-bottom: 0 !important;
+}
