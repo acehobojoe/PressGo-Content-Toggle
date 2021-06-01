@@ -56,7 +56,7 @@ $myUpdateChecker->setBranch('main');
  * Any custom code should go inside Plugin Class in the plugin.php file.
  * @since 1.0.0
  */
-final class PressGo_Widget_Pack {
+final class PressGo_Content_Toggle {
 
   /**
    * Plugin Version
@@ -233,5 +233,5 @@ function add_elementor_widget_categories( $elements_manager ) {
 }
 add_action( 'elementor/elements/categories_registered', 'add_elementor_widget_categories' );
 
-// Instantiate PressGo_Widget_Pack.
-new PressGo_Widget_Pack();
+// Instantiate PressGo_Content_Toggle.
+new PressGo_Content_Toggle();
