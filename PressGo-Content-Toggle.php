@@ -4,7 +4,7 @@
  */
 /*
 Plugin Name: Content Toggle for Elementor
-Plugin URI: https://pressgodigital.com
+Plugin URI: https://github.com/acehobojoe/PressGo-Content-Toggle
 Description: This is a package with a simple content toggle slider that uses content template shortcodes.
 Version: 0.93
 Author: PressGo Digital
