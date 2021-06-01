@@ -1,5 +1,5 @@
 <?php
-namespace PressGo_Widget_Pack;
+namespace PressGo_Content_Toggle;
 
 /**
  * Class Plugin

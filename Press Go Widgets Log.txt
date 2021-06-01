@@ -2,7 +2,7 @@ Elementor Widgets LOG
 
 1. Added a New "Press Go Widgets" Category
 2. Changed the Icon and name of the Widget
-3. You can add to the style tab with the following 
+3. You can add to the style tab with the following
 
   'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 4. Added a simple Heading 1 for the switch
