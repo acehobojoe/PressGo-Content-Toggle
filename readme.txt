@@ -1,18 +1,3 @@
-PressGo Plugins - Content Toggle for Elementor
-
-This plugin allows you to create a toggle section with a simple slider. This is useful for things like pricing tables and other widgets that need to compare two different versions of a similar element.
-
-To use the toggle switch, just install and activate the plugin and drag the new "toggle slider" widget that appears in your elementor side menu.
-
-use a template shortcode from the "templates" section of your website if you use elementor. If you don't use elementor, don't use this plugin.
-
-
-If you have any questions just contact me at joe@pressgodigital.com
-
-
-
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
 === Content Toggle for Elementor ===
 Contributors: acehobojoe
 Donate link: http://buymeacoffee.com/acehobojoe
