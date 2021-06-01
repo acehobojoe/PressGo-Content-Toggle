@@ -50,6 +50,8 @@ class PressGo extends Widget_Base {
 
 
 
+
+
   public function get_title() {
     return __( 'Toggle Slider', 'elementor-PressGo' );
 
@@ -135,8 +137,8 @@ class PressGo extends Widget_Base {
     $this->add_control(
       'content_section',
       [
-        'label' => __( 'Content Section', 'elementor-PressGo' ),
-        'type' => Controls_Manager::WYSIWYG,
+        'label' => __( 'Template Shortcode 1', 'elementor-PressGo' ),
+        'type' => Controls_Manager::TEXT,
         'default' => __( 'Primary Content (template short-codes work here)', 'elementor-PressGo' ),
       ]
     );
@@ -153,8 +155,8 @@ class PressGo extends Widget_Base {
     $this->add_control(
       'content_section2',
       [
-        'label' => __( 'Content Section 2', 'elementor-PressGo' ),
-        'type' => Controls_Manager::WYSIWYG,
+        'label' => __( 'Template Shortcode 2', 'elementor-PressGo' ),
+        'type' => Controls_Manager::TEXT,
         'default' => __( 'Secondary Content (template short-codes work here too)', 'elementor-PressGo' ),
       ]
     );
@@ -379,34 +381,8 @@ $this->end_controls_section();
 <div><<?php echo $settings['html_tag'];?> class="elementor-togl"><?php echo $settings['heading2']; ?></<?php echo $settings['html_tag'];?>></div></div>
 
 <div class="contentsec">
-<div align=center class="section-1"><?php echo $settings['content_section'];?></div>
-<div align=center class="section-2 hide-sec"><?php echo $settings['content_section2'];?></div></div></div>
-
-    <?php
-  }
-
-  /**
-   * Render the widget output in the editor.
-   *
-   * Written as a Backbone JavaScript template and used to generate the live preview.
-   *
-   * @since 1.1.0
-   *
-   * @access protected
-   */
-  protected function _content_template() {
-    ?>
-    <#
-    view.addInlineEditingAttributes( 'heading1', 'basic' );
-    view.addInlineEditingAttributes( 'content', 'advanced' );
-    #>
-    <div class="toggle-btn-sec">
-    <div><{{settings.html_tag}} class="elementor-togl">{{settings.heading1}}</{{settings.html_tag}}></div>
-    <div class="main-btn"><label class="switch">
-      <input type="checkbox" class="tgl" checked><span class="slider round"></span></label></div>
-    <div><{{settings.html_tag}} class="elementor-togl">{{settings.heading2}}</{{settings.html_tag}}></div></div>
-    <div class="contentsec"><div align=center class="section-1">{{settings.content_section}}</div>
-    <div align=center class="section-2 hide-sec">{{settings.content_section2}}</div></div></div>
+<div align=center class="section-1"><?php echo do_shortcode($settings['content_section']);?></div>
+<div align=center class="section-2 hide-sec"><?php echo do_shortcode ($settings['content_section2']);?></div></div></div>
 
     <?php
   }
